@@ -118,12 +118,28 @@ main {
     &:hover {
       color: $red;
     }
+    &::after {
+      transition: 0.3s;
+    }
+    &.show {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
   }
   &-menu {
+    border: none;
     font-size: 1.4rem;
+    min-width: 0;
+    border-radius: 10px;
+    padding: 1rem 0.5rem;
   }
-  &-item:active {
-    background-color: $red;
+  &-item {
+    transition: 0.1s;
+    border-radius: 5px;
+    &:active {
+      background-color: $red;
+    }
   }
 }
 
