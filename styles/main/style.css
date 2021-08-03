@@ -157,6 +157,11 @@ main {
 
 .dropdown-toggle {
   color: #FFFFFF;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .dropdown-toggle:focus {
@@ -168,8 +173,10 @@ main {
 }
 
 .dropdown-toggle::after {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .dropdown-toggle.show::after {
@@ -179,7 +186,7 @@ main {
 
 .dropdown-menu {
   border: none;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   min-width: 0;
   border-radius: 10px;
   padding: 1rem 0.5rem;
@@ -452,6 +459,7 @@ main {
   background-color: #FFFFFF;
   text-align: center;
   padding-top: 6rem;
+  padding-bottom: 3rem;
 }
 
 .stages-wrapper {
@@ -589,6 +597,15 @@ main {
 
 .contacts__bg {
   margin-bottom: -3rem;
+}
+
+.contacts__bg img {
+  -webkit-filter: blur(7px);
+          filter: blur(7px);
+  -o-object-position: center top;
+     object-position: center top;
+  position: relative;
+  z-index: -1;
 }
 
 .contacts__bg::before {
@@ -765,7 +782,7 @@ main {
     transition: 0.3s;
   }
   .btn:hover {
-    background-position: 60px;
+    background-position: 40px;
     -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
     color: #FFFFFF;
@@ -903,6 +920,9 @@ main {
   }
   .form .container {
     padding: 1.5rem;
+  }
+  .about__bg::before {
+    background: url("../../img/about-bg-edge.png") center/auto 100% no-repeat;
   }
   .stages-wrapper::before {
     display: none;

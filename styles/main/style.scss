@@ -112,6 +112,9 @@ main {
   font-size: 2rem;
   &-toggle {
     color: $white;
+    border: 0;
+    box-shadow: none;
+    transition: color 0.3s;
     &:focus {
       color: $white;
     }
@@ -119,7 +122,7 @@ main {
       color: $red;
     }
     &::after {
-      transition: 0.3s;
+      transition: transform 0.3s;
     }
     &.show {
       &::after {
@@ -129,7 +132,7 @@ main {
   }
   &-menu {
     border: none;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     min-width: 0;
     border-radius: 10px;
     padding: 1rem 0.5rem;
@@ -344,6 +347,7 @@ main {
   background-color: $white;
   text-align: center;
   padding-top: 6rem;
+  padding-bottom: 3rem;
   &-wrapper {
     max-width: 80%;
     margin: 3rem auto 0;
@@ -452,6 +456,12 @@ main {
   overflow: hidden;
   &__bg {
     margin-bottom: -3rem;
+    img {
+      filter: blur(7px);
+      object-position: center top;
+      position: relative;
+      z-index: -1;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -574,7 +584,7 @@ main {
   .btn {
     transition: 0.3s;
     &:hover {
-      background-position: 60px;
+      background-position: 40px;
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
       color: $white;
     }
@@ -718,6 +728,11 @@ main {
   .form {
     .container {
       padding: 1.5rem;
+    }
+  }
+  .about__bg {
+    &::before {
+      background: url("../../img/about-bg-edge.png") center/auto 100% no-repeat;
     }
   }
   .stages-wrapper {
