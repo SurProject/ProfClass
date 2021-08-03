@@ -259,7 +259,7 @@ main {
       max-width: 65px;
       width: 100%;
       position: absolute;
-      top: 50%;
+      top: calc(50% - 40px);
       transform: translateY(-50%);
       &--prev {
         mask-image: url("../../img/Arrow2.svg");

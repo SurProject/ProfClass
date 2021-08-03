@@ -349,7 +349,7 @@ main {
   max-width: 65px;
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: calc(50% - 40px);
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
