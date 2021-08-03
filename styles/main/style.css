@@ -317,9 +317,7 @@ main {
 
 .professions__form-attr {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  max-width: 220px;
+  width: 220px;
   top: 100px;
   right: -90px;
 }
