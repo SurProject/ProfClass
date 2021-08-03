@@ -122,6 +122,9 @@ main {
   &-menu {
     font-size: 1.4rem;
   }
+  &-item:active {
+    background-color: $red;
+  }
 }
 
 .major {
@@ -166,23 +169,17 @@ main {
     margin-bottom: -5rem;
     &-attr {
       position: absolute;
+      width: 185px;
       img {
         height: 100%;
         object-fit: contain;
       }
       &--left {
-        width: 100%;
-        height: 100%;
-        max-width: 185px;
-        max-height: 170px;
         bottom: -8px;
         left: -120px;
         transform: rotate(-5deg);
       }
       &--right {
-        width: 100%;
-        height: 100%;
-        max-width: 185px;
         top: -15px;
         right: -90px;
       }
