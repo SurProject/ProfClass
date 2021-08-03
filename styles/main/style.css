@@ -150,19 +150,6 @@ main {
   color: #FFFFFF;
 }
 
-.dropdown-wrapper {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 0.5rem 4rem;
-}
-
 .dropdown {
   font-family: "Colus-regular";
   font-size: 2rem;
@@ -853,6 +840,18 @@ main {
   }
   .contacts {
     padding: 10rem 0 4rem;
+  }
+  .dropdown-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0.5rem 4rem;
   }
 }
 
