@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ProfClass</title>
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css" />
+    <!-- Splide -->
     <link rel="stylesheet" href="styles/splide/splide.min.css" />
+    <!-- === -->
     <link rel="stylesheet" href="styles/reset/reset.css" />
     <link rel="stylesheet" href="styles/main/style.css" />
   </head>
@@ -16,7 +19,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg p-0">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand position-relative" href="#">
               <div class="logo-wrapper">
                 <img src="img/logo.png" alt="" />
               </div>
@@ -53,6 +56,7 @@
                 </li>
               </ul>
             </div>
+            <div class="overlay"></div>
             <div class="dropdown-wrapper">
               <div class="dropdown">
                 <a
@@ -120,31 +124,31 @@
                     <input
                       type="text"
                       class="form-control"
-                      id="UserNameMajor"
+                      name="UserNameMajor"
                       placeholder="Имя"
                       required
                     />
-                    <div class="invalid-feedback">Введите Имя</div>
+                    <span class="invalid-feedback">Введите Имя</span>
                   </div>
                   <div class="col-lg-4 position-relative">
                     <input
                       type="tel"
                       class="form-control phone-mask"
-                      id="UserPhoneMajor"
+                      name="UserPhoneMajor"
                       placeholder="Номер телефона"
                       required
                     />
-                    <div class="invalid-feedback">Введите номер телефона</div>
+                    <span class="invalid-feedback">Введите номер телефона</span>
                   </div>
                   <div class="col-lg-4 position-relative">
                     <input
                       type="email"
                       class="form-control mail-mask"
-                      id="UserMailMajor"
+                      name="UserMailMajor"
                       placeholder="E-mail"
                       required
                     />
-                    <div class="invalid-feedback">Введите почту</div>
+                    <span class="invalid-feedback">Введите почту</span>
                   </div>
                   <div class="col-12 mt-0">
                     <button class="btn" type="submit">Связаться</button>
@@ -224,36 +228,81 @@
                     <input
                       type="text"
                       class="form-control"
-                      id="UserNameProf"
+                      name="UserNameProf"
                       placeholder="Имя"
                       required
                     />
-                    <div class="invalid-feedback">Введите Имя</div>
+                    <span class="invalid-feedback">Введите Имя</span>
                   </div>
                   <div class="col-12 col-lg-4 position-relative">
                     <input
                       type="tel"
                       class="form-control phone-mask"
-                      id="UserPhoneProf"
+                      name="UserPhoneProf"
                       placeholder="Номер телефона"
                       required
                     />
-                    <div class="invalid-feedback">Введите номер телефона</div>
+                    <span class="invalid-feedback">Введите номер телефона</span>
                   </div>
                   <div class="col-12 col-lg-4 position-relative">
                     <input
                       type="email"
                       class="form-control mail-mask"
-                      id="UserMailProf"
+                      name="UserMailProf"
                       placeholder="E-mail"
                       required
                     />
-                    <div class="invalid-feedback">Введите почту</div>
+                    <span class="invalid-feedback">Введите почту</span>
                   </div>
                   <div class="col-12 mt-0">
                     <button class="btn" type="submit">Связаться</button>
                   </div>
                 </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="only text-center">
+        <div class="container">
+          <h2 class="only__title title">только у нас вы получаете:</h2>
+          <div class="only-wrapper">
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="only__img">
+                  <div class="sircle sircle--gray">
+                    <img src="img/flag-euro.png" alt="" />
+                  </div>
+                </div>
+                <div class="only__body">
+                  <h3 class="only__title">
+                    Повышение квалификации и сертификат Евросоюза
+                  </h3>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 pt-5 pt-sm-0">
+                <div class="only__img">
+                  <div class="sircle sircle--red">
+                    <img src="img/money.png" alt="" />
+                  </div>
+                </div>
+                <div class="only__body">
+                  <h3 class="only__title">
+                    Высокооплачиваемую работу в Германии
+                  </h3>
+                </div>
+              </div>
+              <div class="col-md-4 pt-5 pt-md-0">
+                <div class="only__img">
+                  <div class="sircle sircle--yellow">
+                    <img src="img/family.png" alt="" />
+                  </div>
+                </div>
+                <div class="only__body">
+                  <h3 class="only__title">
+                    Натурализацию в Германии с правом привезти свою семью
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
@@ -301,7 +350,7 @@
           <h2 class="title">Этапы работы</h2>
           <div class="stages-wrapper">
             <div class="row">
-              <div class="col-6 col-md-4">
+              <div class="col-sm-6 col-md-4">
                 <div class="stages__img">
                   <div class="sircle sircle--gray">
                     <span class="number">1</span>
@@ -315,7 +364,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-6 col-md-4">
+              <div class="col-sm-6 col-md-4 pt-5 pt-sm-0">
                 <div class="stages__img">
                   <div class="sircle sircle--red">
                     <span class="number">2</span>
@@ -329,7 +378,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 pt-5 pt-md-0">
                 <div class="stages__img">
                   <div class="sircle sircle--yellow">
                     <span class="number">3</span>
@@ -366,7 +415,7 @@
           <div class="contacts-wrapper">
             <div class="container">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 order-1 order-md-0">
                   <div class="contacts__network">
                     <div class="contacts__network-group">
                       <h3 class="title">Номер телефона</h3>
@@ -395,7 +444,7 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="form">
+                  <div class="form text-center text-md-start">
                     <div class="container">
                       <h2 class="form__title">Связаться с нами</h2>
                       <div class="form-wrapper m-0">
@@ -404,34 +453,34 @@
                             <input
                               type="text"
                               class="form-control"
-                              id="UserNameContact"
+                              name="UserNameContact"
                               placeholder="Имя"
                               required
                             />
-                            <div class="invalid-feedback">Введите Имя</div>
+                            <span class="invalid-feedback">Введите Имя</span>
                           </div>
                           <div class="col-12 position-relative">
                             <input
                               type="tel"
                               class="form-control phone-mask"
-                              id="UserPhoneContact"
+                              name="UserPhoneContact"
                               placeholder="Номер телефона"
                               minlength="19"
                               required
                             />
-                            <div class="invalid-feedback">
-                              Введите номер телефона
-                            </div>
+                            <span class="invalid-feedback"
+                              >Введите номер телефона</span
+                            >
                           </div>
                           <div class="col-12 position-relative">
                             <input
                               type="email"
                               class="form-control mail-mask"
-                              id="UserMailContact"
+                              name="UserMailContact"
                               placeholder="E-mail"
                               required
                             />
-                            <div class="invalid-feedback">Введите почту</div>
+                            <span class="invalid-feedback">Введите почту</span>
                           </div>
                           <div class="col-12 mt-0">
                             <button class="btn" type="submit">Связаться</button>
@@ -493,7 +542,7 @@
     <!-- Splide -->
     <script src="js/splide/splide.min.js"></script>
     <script>
-      (function () {
+      (() => {
         new Splide(".splide", {
           perPage: 3,
           perMove: 1,
@@ -513,6 +562,6 @@
         }).mount();
       })();
     </script>
-    <script src="js/scrypt.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
