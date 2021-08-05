@@ -193,13 +193,13 @@ main {
 .dropdown {
   font-family: "Colus-regular";
   font-size: 2rem;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .dropdown-toggle {
   color: #FFFFFF;
-  border: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
@@ -349,6 +349,12 @@ main {
   padding: 1.2rem 2rem;
   max-width: 240px;
   margin: 0 auto;
+}
+
+.form-control:focus {
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .form-control::-webkit-input-placeholder {
