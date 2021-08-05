@@ -80,7 +80,6 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   height: auto;
-  overflow: hidden;
 }
 
 .body main {
