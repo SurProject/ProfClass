@@ -45,6 +45,7 @@ main {
   min-height: 100vh;
   flex-direction: column;
   height: auto;
+  overflow: hidden;
   main {
     flex: 1 0 auto;
   }
@@ -142,13 +143,13 @@ main {
 .dropdown {
   font-family: $font-Colus-regular;
   font-size: 2rem;
-  border: 0;
-  box-shadow: none;
   &-toggle {
     color: $white;
     transition: color 0.3s;
     &:focus {
       color: $white;
+      border: 0;
+      box-shadow: none;
     }
     &:hover {
       color: $red;

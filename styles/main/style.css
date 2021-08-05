@@ -80,6 +80,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   height: auto;
+  overflow: hidden;
 }
 
 .body main {
@@ -193,9 +194,6 @@ main {
 .dropdown {
   font-family: "Colus-regular";
   font-size: 2rem;
-  border: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .dropdown-toggle {
@@ -206,6 +204,9 @@ main {
 
 .dropdown-toggle:focus {
   color: #FFFFFF;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .dropdown-toggle:hover {
