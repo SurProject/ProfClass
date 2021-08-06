@@ -195,12 +195,6 @@ main {
   font-size: 2rem;
 }
 
-.dropdown:focus {
-  border: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 .dropdown-toggle {
   color: #FFFFFF;
   -webkit-transition: color 0.3s;
@@ -907,7 +901,7 @@ main {
     transition: 0.3s;
   }
   .contacts .network-wrapper:hover {
-    background-color: #FFFFFF;
+    background-color: #fa1717;
   }
   .footer-major a {
     -webkit-transition: 0.3s;
