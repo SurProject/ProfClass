@@ -142,6 +142,10 @@ main {
 .dropdown {
   font-family: $font-Colus-regular;
   font-size: 2rem;
+  &:focus {
+    border: 0;
+    box-shadow: none;
+  }
   &-toggle {
     color: $white;
     transition: color 0.3s;
